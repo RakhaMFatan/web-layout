@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Dasar</title>
+    <style>
+        .header{
+            background-color: #ffffff;
+            min-height: 50px;
+            text-align: center;
+        }
+        .content{
+            background-color: #ddd;
+            min-height: 500px;
+            overflow: auto;
+
+        }
+        .footer{
+            background-color: #ccc;
+            min-width: 50px;
+            padding: 20px;
+            text-align: center;
+        }
+        .container{
+            width: 800px;
+            margin: auto;
+        }
+        .menu ul{
+            padding: 0;
+        }
+        .menu ul li{
+            display: inline-block;
+            position: relative;
+        }
+        .menu ul li a{
+            padding: 10px 20px;
+            text-decoration: none;
+        }
+        .logo img{
+            width: 200px;
+
+        }
+        .thumbnail{
+            background-color: white;
+            text-align: center;
+            padding: 10px;
+            width: 225px;
+            margin: 10px;
+            float: left;
+        }
+        .thumbnail img{
+            width: 100%;
+        }
+        .tombol{
+            border-radius: 15px;
+            background-color: red;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        .tombol:hover{
+            border-radius: 15px;
+            background-color: white;
+            color: red;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-color: red;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            animation: pulse-animation 3s both  ;
+        }
+        @keyframes pulse-animation {
+            0%{
+                box-shadow: 0 0 0 0px red;
+            }
+            100%{
+                box-shadow: 0 0 0 20px rgba(255, 0, 0, 0.452)
+            }
+            
+        }
+        ul.submenu{
+            background-color: #eee;
+            border: 1px solid #ccc;
+            text-align: left;
+            position: absolute;
+            top: 20px;
+            left: 0;
+            display: none;
+        }
+        ul.submenu li{
+            display: block;
+        }
+        ul.submenu li a {
+            display: block;
+            padding: 5px 10px;
+        }
+        .menu ul li:hover ul.submenu{
+            display: block;
+        }
+        .jumbotron{
+            width: 100%;
+            padding: 80px 40px;
+            box-sizing: border-box;
+            text-align: center;
+            color: white;
+            background-color: #aaa;
+            background-image: url(https://wallpapercat.com/w/full/3/7/c/11060-1920x1080-desktop-full-hd-yamaha-wallpaper.jpg);
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <img src="yamaha.jpeg" alt="logo Produk">
+            </div>
+            <div class="menu">
+                <div class="menu">
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li>
+                            <a href="">About</a>
+                            <ul class="submenu">
+                                <li><a href="">CV</a></li>
+                                <li><a href="">Educaion</a></li>
+                                <li><a href="">Portofolio</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">contact</a></li>
+                    </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="jumbotron">
+        <div class="overlay">
+
+        </div>
+        <h2>Welcome To My Homepage</h2>
+        <p>Selamat datang di Website saya, Silahkan Memilah dan Mengkoreksi<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+
+        <div class="content">
+            <h2 style="margin: 10px;">Our Produk</h2>
+            <div class="thumbnail">
+                <img src="fazzio.jpeg" alt="">
+                <h2>Product 2</h2>
+                <p>Rp 250.000</p>
+                <button class="tombol"><a href=""></a>Detail</button>
+            </div>
+            <div class="thumbnail">
+                <img src="motor.jpeg" alt="">
+                <h2>Product 2</h2>
+                <p>Rp 250.000</p>
+                <button class="tombol"><a href=""></a>Detail</button>
+            </div>
+            <div class="thumbnail">
+                <img src="R15-CON-3-600x400.png" alt="">
+                <h2>Product 2</h2>
+                <p>Rp 250.000</p>
+                <button class="tombol"><a href=""></a>Detail</button>
+            </div>
+            <div class="thumbnail">
+                <img src="http://via.placeholder.com/250x150" alt="">
+                <h2>Product 2</h2>
+                <p>Rp 250.000</p>
+                <button class="tombol"><a href=""></a>Detail</button>
+            </div>
+            <div class="thumbnail">
+                <img src="http://via.placeholder.com/250x150" alt="">
+                <h2>Product 2</h2>
+                <p>Rp 250.000</p>
+                <button class="tombol"><a href=""></a>Detail</button>
+            </div>
+            <div class="thumbnail">
+                <img src="http://via.placeholder.com/250x150" alt="">
+                <h2>Product 2</h2>
+                <p>Rp 250.000</p>
+                <button class="tombol"><a href=""></a>Detail</button>
+            </div>
+            <div class="thumbnail">
+                <img src="http://via.placeholder.com/250x150" alt="">
+                <h2>Product 2</h2>
+                <p>Rp 250.000</p>
+                <button class="tombol"><a href=""></a>Detail</button>
+            </div>
+        </div>
+
+
+        <div class="footer">
+            <p>Copyright 2024 My Page</p>
+        </div>
+    </div>
+</body>
+</html>
